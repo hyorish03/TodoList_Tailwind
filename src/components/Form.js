@@ -16,16 +16,21 @@ function Form({ todoData, setValue, setTodoData, value }) {
     setValue("");
   };
   return (
-    <form style={{ display: "flex" }} onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex pt-2">
       <input
+        className="w-full px-3 py-2 mr-4 text-gray-500 rounded shadow"
         type="text"
         name="title"
-        style={{ flex: "10", padding: "5px" }}
         placeholder="해야할 일을 입력하세요"
         onChange={handleChange}
         value={value}
       />
-      <input type="submit" value="입력" className="btn" style={{ flex: 1 }} />
+      <input
+        className="p-2 text-center w-fit text-blue-400 border-2 border-blue-400 rounded drop-shadow-lg hover:bg-blue-400 hover:text-white"
+        value="입력"
+        type="submit"
+        onSubmit={handleSubmit}
+      />
     </form>
   );
 }
