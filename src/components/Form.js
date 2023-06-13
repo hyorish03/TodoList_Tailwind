@@ -1,8 +1,6 @@
 import React from "react";
 
 function Form({ todoData, setValue, setTodoData, value }) {
-  console.log("Form is rendering");
-
   const handleChange = (e) => {
     setValue(e.target.value);
   };
@@ -17,6 +15,7 @@ function Form({ todoData, setValue, setTodoData, value }) {
     setTodoData([...todoData, newTodo]);
     setValue("");
   };
+
   return (
     <form onSubmit={handleSubmit} className="flex pt-2">
       <input
