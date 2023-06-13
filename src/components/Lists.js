@@ -39,7 +39,6 @@ function Lists({ todoData, setTodoData }) {
                       id={data.id}
                       title={data.title}
                       key={data.id}
-                      id={data.id}
                       completed={data.completed}
                       provided={provided}
                       snapshot={snapshot}
