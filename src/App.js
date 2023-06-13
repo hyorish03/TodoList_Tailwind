@@ -15,11 +15,17 @@ export default function App() {
     },
     [todoData]
   );
+
+  const handleRemoveClick = useCallback(() => {
+    setTodoData([]);
+  }, []);
+
   return (
     <div className="flex items-center justify-center w-screen h-screen bg-blue-100">
       <div className="w-full p-6 m-4 bg-white rounded shadow lg:w-3/4 lg:max-w-lg">
         <div className="flex justify-between mb-3">
           <h1>Todo List</h1>
+          <button onClick={handleRemoveClick}> Delete All</button>
         </div>
 
         <Lists
