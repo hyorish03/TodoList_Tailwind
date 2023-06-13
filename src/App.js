@@ -3,11 +3,11 @@ import "./App.css";
 import Lists from "./components/Lists";
 import Form from "./components/Form";
 
-const initialTodoData = localStorage.getItem("todoData")
-  ? JSON.parse(localStorage.getItem("todoData"))
-  : [];
-export default function App() {
-  const [todoData, setTodoData] = useState(initialTodoData);
+function App() {
+  const initialTodoData = localStorage.getItem("todoData")
+    ? JSON.parse(localStorage.getItem("todoData"))
+    : [];
+  const [todoData, setTodoData] = useState([initialTodoData]);
   const [value, setValue] = useState("");
 
   const handleClick = useCallback(
@@ -47,3 +47,4 @@ export default function App() {
     </div>
   );
 }
+export default App;

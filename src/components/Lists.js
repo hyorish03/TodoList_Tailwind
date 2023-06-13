@@ -21,6 +21,7 @@ function Lists({ todoData, setTodoData, handleClick }) {
     setTodoData(newTodo);
     localStorage.setItem("todoData", JSON.stringify(newTodo));
   };
+  console.log("Lists", todoData);
 
   return (
     <div>
