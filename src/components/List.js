@@ -8,6 +8,7 @@ function List({
   setTodoData,
   provided,
   snapshot,
+  handleClick,
 }) {
   const handleCompleteChange = (id) => {
     let newTodo = todoData.map((todo) => {
@@ -19,10 +20,6 @@ function List({
     setTodoData(newTodo);
   };
 
-  const handleClick = (id) => {
-    let newTodo = todoData.filter((todo) => todo.id !== id);
-    setTodoData(newTodo);
-  };
   return (
     <div
       key={id}
