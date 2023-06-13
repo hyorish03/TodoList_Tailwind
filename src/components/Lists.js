@@ -19,6 +19,7 @@ function Lists({ todoData, setTodoData, handleClick }) {
     // 3. 원하는 자리에 redorededItem을 넣어준다.
     newTodo.splice(result.destination.index, 0, reorderedItem);
     setTodoData(newTodo);
+    localStorage.setItem("todoData", JSON.stringify(newTodo));
   };
 
   return (

@@ -13,6 +13,8 @@ function Form({ todoData, setValue, setTodoData, value }) {
       completed: false,
     };
     setTodoData([...todoData, newTodo]);
+    localStorage.setItem("todoData", JSON.stringify(...todoData, newTodo));
+
     setValue("");
   };
 
