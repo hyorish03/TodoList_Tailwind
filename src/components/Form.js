@@ -1,7 +1,7 @@
 import React from "react";
 
 function Form({ todoData, setValue, setTodoData, value }) {
-  console.log("form component");
+  console.log("Form is rendering");
 
   const handleChange = (e) => {
     setValue(e.target.value);
