@@ -1,4 +1,4 @@
-## TodoList with Tailwind CSS
+## 프로젝트 소개
 - Tailwind CSS를 사용해보고싶어서 간단히 TodoList를 만들었습니다.
 - react-beautiful-dnd를 사용하여 Drag and Drop 기능을 구현했습니다.
 - React.memo를 이용하여 렌더링 최적화 하였습니다.
