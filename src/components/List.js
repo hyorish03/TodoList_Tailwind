@@ -21,6 +21,7 @@ function List({
       return todo;
     });
     setTodoData(newTodo);
+    localStorage.setItem("todoData", JSON.stringify(newTodo));
   };
 
   const handleEdit = () => {
@@ -41,6 +42,7 @@ function List({
     });
     setTodoData(newTodoData);
     setIsEditing(false);
+    localStorage.setItem("todoData", JSON.stringify(newTodoData));
   };
 
   if (isEditing) {
