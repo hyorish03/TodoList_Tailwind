@@ -9,6 +9,7 @@ function List({
   provided,
   snapshot,
 }) {
+  console.log("list component");
   const handleCompleteChange = (id) => {
     let newTodo = todoData.map((todo) => {
       if (todo.id === id) {

@@ -55,4 +55,4 @@ function Lists({ todoData, setTodoData }) {
   );
 }
 
-export default Lists;
+export default React.memo(Lists);
